@@ -343,7 +343,7 @@
     footer{background:var(--blue-dark);}
     .foot-in{max-width:1280px;margin:0 auto;padding:80px 48px 40px;}
     .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px;}
-    .foot-logo-row{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+    .foot-logo-row{display:flex;align-items:center;gap:12px;margin-bottom:20px; width:200px; height:150px; border-radius: 50%; background: #fff;}
     .foot-logo-ico{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:700;color:var(--white);font-size:18px;}
     .foot-brand-name{font-family:var(--font-d);font-weight:700;font-size:17px;color:var(--white);letter-spacing:1px;}
     .foot-brand-sub{font-size:9px;letter-spacing:4px;color:rgba(255,255,255,.5);text-transform:uppercase;}
@@ -460,8 +460,9 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <div class="nav-logo-icon">S</div>
-      <div><p class="nav-logo-title">SAM VISA</p><p class="nav-logo-sub">Services · London</p></div>
+      {{-- <div class="nav-logo-icon">S</div>
+      <div><p class="nav-logo-title">SAM VISA</p><p class="nav-logo-sub">Services · London</p></div> --}}
+      <img src="https://samvisauk.com/wp-content/uploads/2023/11/fulllogo_transparent_nobuffer-removebg-preview_200x100px.png" alt="">
     </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
@@ -469,7 +470,7 @@
       <li><a href="#countries">Countries</a></li>
       <li><a href="#tours">Tours</a></li>
       <li><a href="#testimonials">Reviews</a></li>
-      <li><a href="tel:+447908268383" class="nav-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>+44 7908 268383</a></li>
+      <li><a href="tel:+447879175585" class="nav-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>+44 7879 175585</a></li>
       <li><a href="#" onclick="openPopup();return false;" class="nav-cta">Apply Now</a></li>
     </ul>
     <button class="hamburger" onclick="toggleMobile()" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -480,7 +481,7 @@
     <a href="#countries" onclick="toggleMobile()">Countries</a>
     <a href="#tours" onclick="toggleMobile()">Tours</a>
     <a href="#testimonials" onclick="toggleMobile()">Reviews</a>
-    <a href="tel:+447908268383">📞 +44 7908 268383</a>
+    <a href="tel:+447879175585">📞 +44 7879 175585</a>
     <button class="mob-cta" onclick="openPopup();toggleMobile();">Apply for Visa Now</button>
   </div>
 </nav>
@@ -672,7 +673,7 @@
     <p class="cta-desc reveal">Let our expert team handle your visa application. Fast, reliable, and trusted by thousands of travellers across the UK and beyond.</p>
     <div class="cta-btns reveal">
       <button class="btn-wh" onclick="openPopup()">Apply for Visa Now<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-      <a href="https://wa.me/447908268383" target="_blank" rel="noopener" class="btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp Us</a>
+      <a href="https://wa.me/+4477879175585" target="_blank" rel="noopener" class="btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp Us</a>
     </div>
   </div>
 </section>
@@ -682,9 +683,11 @@
   <div class="foot-in">
     <div class="foot-grid">
       <div class="reveal from-left">
-        <div class="foot-logo-row"><div class="foot-logo-ico">S</div><div><p class="foot-brand-name">SAM VISA SERVICES</p><p class="foot-brand-sub">London, UK</p></div></div>
+        <div class="foot-logo-row">
+          <img src="https://samvisauk.com/wp-content/uploads/2023/11/fulllogo_transparent_nobuffer-removebg-preview_200x100px.png" alt="SAM VISA SERVICES">
+        </div>
         <p class="foot-desc">A professional travel service provider based in London, offering visa and travel services since 2010. Registered with the ICO.</p>
-        <a href="tel:+447908268383" class="foot-phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>+44 7908 268383</a>
+        <a href="tel:+447879175585" class="foot-phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>+44 77879 175585</a>
       </div>
       <div class="foot-col reveal reveal-d1"><h4>Visas</h4><ul><li><a href="#">Tourist Visa</a></li><li><a href="#">Business Visa</a></li><li><a href="#">Family Visit</a></li><li><a href="#">Student Visa</a></li><li><a href="#">Transit Visa</a></li></ul></div>
       <div class="foot-col reveal reveal-d2"><h4>Countries</h4><ul><li><a href="#">United Kingdom</a></li><li><a href="#">United States</a></li><li><a href="#">Canada</a></li><li><a href="#">Australia</a></li><li><a href="#">UAE / Dubai</a></li><li><a href="#">Turkey</a></li></ul></div>
