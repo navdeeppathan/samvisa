@@ -416,7 +416,7 @@
     <div class="popup-bar"></div>
     <button class="popup-close" onclick="closePopup()" aria-label="Close">✕</button>
     <div class="popup-body">
-      <div class="popup-badge"><span class="badge-dot"></span> Free Consultation</div>
+      {{-- <div class="popup-badge"><span class="badge-dot"></span> Free Consultation</div> --}}
       <h2 class="popup-title">Apply for Your <em>Visa</em></h2>
       <p class="popup-desc">Fill in your details — our expert agents will contact you within 24 hours to guide you through every step of the process.</p>
       <form 
