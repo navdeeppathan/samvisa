@@ -52,4 +52,26 @@ class VisaRequestController extends Controller
         return back()->with('success','Reply sent successfully');
     }
 
+   public function bulkMail(Request $request)
+    {
+        $ids = explode(',', $request->users);
+
+        $users = VisaRequest::whereIn('id',$ids)->get();
+
+        foreach($users as $user){
+
+            Mail::send('emails.visa-template', [
+                'messageText' => $request->message
+            ], function ($mail) use ($user) {
+
+                $mail->to($user->email)
+                    ->subject('Visa Assistance');
+
+            });
+
+        }
+
+        return back()->with('success','Bulk mail sent successfully');
+    }
+
 }

@@ -38,6 +38,8 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
         Route::delete('/visa-requests/{id}',[AdminVisaController::class,'destroy'])->name('visa.delete');
 
     Route::post('/visa-requests/{id}/reply',[AdminVisaController::class,'sendReply'])->name('visa.reply');
-      
+   
 
+    Route::post('/visa-requests/bulk-mail', [AdminVisaController::class,'bulkMail'])
+    ->name('visa.bulk.mail');
 });
